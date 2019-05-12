@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+  </head>
+  <body id="top"><div class="site-wrapper">
+  <div class="inner cover">
+        <h1 class="cover-heading">Autos Seminuevos "El Cuate"</h1>
+          <img src="../../../images/logo.webp" id="logo"></img>
+      </div>
+      <section class="container-fluid">
+             <nav class="navbar navbar-expand-sm navbar-dark navbar-brand">
+               
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseibleNavBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="collapseibleNavBar">
+                 <ul class="navbar-nav">
+                   
+                     <li class="nav-item"><button class="btn-default">  <a href="Catalogo.html" class="nav-link">Catálogo</a></button></li>
+                     <li class="nav-item"> <button class="btn-default" data-toggle="modal" data-target="#ActualizarModal"><a class="nav-link">Actualizar Mis Datos</a></button> </li>
+                     <li class="nav-item"> <button class="btn-default" data-toggle="modal" data-target="#ComentariosModal"><a class="nav-link">Quejas Y Sugerencias</a></button> </li>
+                         <li class="nav-item"><button class="btn-default"><a href="logout.php" class="nav-link">Cerrar Sesión</a></button></li>
+                         
+                 </ul>
+
+                    </div>
+             </nav>
+  <div class="site-wrapper-inner">
+    <div class="cover-container">      
+       <section id="catalogo" class="row">
+             <section class="col-sm-3">
+              <figure >
+                 <br><img class="img" src="../../images/f1.jpg" class="img-responsive img-thumbnail"/><p> Camioneta color amarillo, 2 puertas, marca Chevrolet, modelo CH-890-J2 </p><img class="img" src="../../images/f2.jpg" class="img-responsive img-thumbnail"/><p> Camioneta color naranja, 4 puertas, marca Chevrolet, modelo CK-460-J2 </p><img class="img"src="../../images/f3.jpeg" class="img-responsive img-thumbnail"/><p>Camioneta doble cabina color gris, 4 puertas, marca Audi, modelo AD-40-J2</p><img class="img" src="../../images/f4.jpg" class="img-responsive img-thumbnail"/><p>Auto color negro, 4 puertas, marca Nissan, modelo NI-460-N7</p>
+             </figure></section>
+            <section class="col-sm-3">
+              <figure >
+                  <br><img  class="img" src="../../images/f5.jpg" class="img-responsive img-thumbnail"/><p>Auto color café, 4 puertas, marca SEAT, modelo CS-490-S7</p><img class="img" src="../../images/f6.jpg" class="img-responsive img-thumbnail"/><p>Auto color azul, 4 puertas, marca NISSAN, modelo NI-490-S7</p><img class="img" src="../../images/f7.jpeg" class="img-responsive img-thumbnail"/><p>Auto color vino, 4 puertas, marca Mercedes Benz, modelo MB-780-Z7</p><img class="img" src="../../images/f8.jpg" class="img-responsive img-thumbnail"/><p>Auto color vino, 4 puertas, marca Mercedes Benz, modelo MB-780-Z7</p>
+             </figure>
+             </section>
+             <section class="col-sm-3">
+              <figure >
+                 <br><img class="img" src="../../images/f9.jpg" class="img-responsive img-thumbnail"/><p>Camioneta doble cabina color plata, 4 puertas, marca KIA, modelo KI-780-A7</p><img class="img" src="../../images/f10.jpg" class="img-responsive img-thumbnail"/><p>Auto color naranja, 4 puertas, marca Lamborghini, modelo LM-780-B7</p><img class="img" src="../../images/f11.jpg" class="img-responsive img-thumbnail"/><p>Auto color blanco/azul, 4 puertas, marca Mercedes Benz, modelo MB-780-Z9</p><img class="img" src="../../images/f12.jpg" class="img-responsive img-thumbnail"/><p>Auto convertible color plata, 2 puertas, marca Porsche, modelo PS-780-D7</p>
+             </figure>
+             </section>
+             <section class="col-sm-3">
+              <figure >
+                 <br><img class="img" src="../../images/f13.jpeg" class="img-responsive img-thumbnail"/><p>Auto color blanco, 4 puertas, marca Audi, modelo AUD-80-DI</p><img class="img" src="../../images/f14.jpg" class="img-responsive img-thumbnail"/><p>Auto color arena, 4 puertas, marca Audi, modelo AUD-95-DI</p><img class="img" src="../../images/f16.jpg" class="img-responsive img-thumbnail"/><p>Auto color gris, 4 puertas, marca Chevrolet, modelo CH-789-T6</p><img class="img" src="../../images/f15.webp" class="img-responsive img-thumbnail"/><p>Auto clásico color rojo, 2 puertas, marca Ferrari, modelo FE-890-I8</p>
+             </figure>
+             </section>
+       </section>
+
+        <div class="modal fade accionmodal" id="ActualizarModal" tabindex="-1" role="dialog" aria-labelledby="ActualizarModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ActualizarModalLabel">Actualizar Datos De Mi Cuenta:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="post" action="mensaje1.php" name="actualiza">
+    <div class="form-group">
+	Ingresa tu correo eletrónico <br>
+						<input type="text" name="txtcorreo" id="txtcorreo" placeholder="ej: juanlopezperez@dominio.com" class="form-control"> <br> <br>
+	Ingresa tu contraseña<br>
+						<input type="password" name="txtpassword" id="txtpassword" placeholder="************" class="form-control"> <br> <br>
+	Ingresa tu nombre completo<br>
+					<input type="text" name="txtnombre" id="txtnombre" placeholder="ej: Juan López Perez" class="form-control"> <br> <br>
+	Teléfono <br>
+		<input type="text" id="txttelefono" name="txttelefono" placeholder="ej: 4771234567" class="form-control">
+			<br>
+				<br>
+	Dirección <br>
+		<input type="text" name="txtdireccion" id="txtdireccion" placeholder="ej: avenida siepre viva #209" class="form-control">
+				<br>
+					<br>
+	Número de tarjeta <br>
+		<input type="text" name="txttarjeta" id="txttarjeta" placeholder="ej: 123456xxxxxxxxxx" class="form-control">
+				<br>
+					<br>
+		Número de CVV <br>
+		<input type="text" name="txtcvv" id="txtcvv" placeholder="ej: 123" class="form-control">
+        </div>
+</form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" onclick="actualiza.submit()" class="btn btn-default">Actualizar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        
+                <div class="modal fade accionmodal" id="ComentariosModal" tabindex="-1" role="dialog" aria-labelledby="ComentariosModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ComentariosModalLabel">Quejas Y Sugerencias:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="post" action="mensaje2.php" name="comentarios">
+	¿Cómo calificaría su experiencia con nosotros?<br>(En escala del 1 al 10) <br>
+		<input type="text" name="txtrate" id="txtrate" placeholder="Calificacion 1-10" class="form-control">
+				<br>
+					<br>
+		Comentarios <br>
+		<textarea type="text" rows="5" name="txtcomentario" id="txtcomentario" placeholder="Escriba aquí su comentario" class="form-control"></textarea></form>
+        </div>
+<div class="modal-footer">
+              <button type="button" onclick="comentarios.submit()" class="btn btn-default">Enviar</button>
+            </div>
+            </div> 
+          </div>
+        </div>
+    </div>
+        
+        <br>
+        <div class="mastfoot">
+        <div class="inner">
+          <p>&copy; Activa Inc: <a href="https://es.wikipedia.org/wiki/Software" target="_blank"> Software</a>.<br>Cel. 4776788285</p>
+        </div>
+      </div>
+      </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

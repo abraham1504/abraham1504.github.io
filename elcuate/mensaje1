@@ -1,0 +1,4 @@
+<?php
+	echo "<script> alert('datos actualizados'); </script>";
+	echo "<script> window.location='Catalogo.html'; </script>";
+?>

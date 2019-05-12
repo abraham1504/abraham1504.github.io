@@ -1,0 +1,4 @@
+<?php
+	echo "<script> alert('Comentario enviado'); </script>";
+	echo "<script> window.location='Catalogo.html'; </script>";
+?>
